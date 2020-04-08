@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>LEARN MATH WITH ME</title>
+</head>
+
+<body class="bg-success">
+    <header>
+        <div class="d-flex justify-content-center">
+            <div class="brand">
+                <h1 class="display-3">Learn Math with me</h1>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid py-4">
+        <div class="card-deck row">
+            <div id="operand-1-box" class="card col-2 border border-dark">
+                <div id="operand-1-title" class="card-header text-center">First Operand</div>
+                <div id="operand-1-body" class="card-body">
+                    <div id="operand-1-screen" class="card-title text-center py-4 h1"></div>
+                    <div id="operand-1-button">
+                        <div class="row">
+                            <div id="no-7" class="col-4 text-center border border-dark p-4 myButtonFirst">7</div>
+                            <div id="no-8"
+                                class="col-4 text-center border-top border-bottom border-dark p-4 myButtonFirst">8</div>
+                            <div id="no-9" class="col-4 text-center border border-dark p-4 myButtonFirst">9</div>
+                        </div>
+                        <div class="row">
+                            <div id="no-4"
+                                class="col-4 text-center border-right border-left border-dark p-4 myButtonFirst">4</div>
+                            <div id="no-5" class="col-4 text-center p-4 myButtonFirst">5</div>
+                            <div id="no-6"
+                                class="col-4 text-center border-right border-left border-dark p-4 myButtonFirst">6</div>
+                        </div>
+                        <div class="row">
+                            <div id="no-1" class="col-4 text-center border border-dark p-4 myButtonFirst">1</div>
+                            <div id="no-2"
+                                class="col-4 text-center border-top border-bottom border-dark p-4 myButtonFirst">2</div>
+                            <div id="no-3" class="col-4 text-center border border-dark p-4 myButtonFirst">3</div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div id="no-0"
+                                class="col-4 text-center border-bottom border-right border-left border-dark p-4 myButtonFirst">
+                                0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="operator-box" class="card col-2">
+                <div id="operator-title" class="card-header text-center">Operator</div>
+                <div id="operator-body" class="card-body">
+                    <div id="operator-screen" class="card-title text-center py-4 h1"></div>
+                    <div id="operator-button">
+                        <div class="row">
+                            <div class="col-4 text-center bg-white p-4"></div>
+                            <div class="col-4 text-center bg-white p-4"></div>
+                            <div class="col-4 text-center bg-white p-4"></div>
+                        </div>
+                        <div class="row">
+                            <div id="op-+" class="col-4 text-center border border-dark p-4 myButtonOperator">+</div>
+                            <div id="op--"
+                                class="col-4 text-center border-top border-bottom border-dark p-4 myButtonOperator">-
+                            </div>
+                            <div id="op-X" class="col-4 text-center border border-dark p-4 myButtonOperator">X</div>
+                        </div>
+                        <div class="row">
+                            <div id="op-/"
+                                class="col-4 text-center border-right border-left border-bottom border-dark p-4 myButtonOperator">
+                                /</div>
+                            <div id="op-%" class="col-4 text-center border-bottom border-dark p-4 myButtonOperator">%
+                            </div>
+                            <div id="op-^"
+                                class="col-4 text-center border-right border-left border-bottom border-dark p-4 myButtonOperator">
+                                ^</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 align-self-center text-center bg-white p-4 myButtonOperator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="operand-2-box" class="card col-2">
+                <div id="operand-2-title" class="card-header text-center">Second Operand</div>
+                <div id="operand-2-body" class="card-body">
+                    <div id="operand-2-screen" class="card-title text-center py-4 h1"></div>
+                    <div id="operand-2-button">
+                        <div class="row">
+                            <div id="no-7" class="col-4 text-center border border-dark p-4 myButtonSecond">7</div>
+                            <div id="no-8"
+                                class="col-4 text-center border-top border-bottom border-dark p-4 myButtonSecond">8
+                            </div>
+                            <div id="no-9" class="col-4 text-center border border-dark p-4 myButtonSecond">9</div>
+                        </div>
+                        <div class="row">
+                            <div id="no-4"
+                                class="col-4 text-center border-right border-left border-dark p-4 myButtonSecond">4
+                            </div>
+                            <div id="no-5" class="col-4 text-center p-4 myButtonSecond">5</div>
+                            <div id="no-6"
+                                class="col-4 text-center border-right border-left border-dark p-4 myButtonSecond">6
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="no-1" class="col-4 text-center border border-dark p-4 myButtonSecond">1</div>
+                            <div id="no-2"
+                                class="col-4 text-center border-top border-bottom border-dark p-4 myButtonSecond">2
+                            </div>
+                            <div id="no-3" class="col-4 text-center border border-dark p-4 myButtonSecond">3</div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div id="no-0"
+                                class="col-4 text-center border-bottom border-right border-left border-dark p-4 myButtonSecond">
+                                0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="equal-box" class="container col-1 text-center">
+                <div class="row equal">
+                    <div class="col align-self-center h1">=</div>
+                </div>
+            </div>
+            <div id="result-box" class="container col-3 text-center">
+                <div class="row result">
+                    <div id="result-screen" class="col align-self-center h1"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>Do you want some cool quotes? Click <a data-toggle="modal" data-target="#quotesModal">here</a></footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="quotesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Today's Quotes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="quotes-screen" class="modal-body">
+                    “Mathematics expresses values that reflect the cosmos, including orderliness, balance, harmony, logic, and abstract beauty.”<br> ― Deepak Chopra 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="quotes-button" class="btn btn-primary">Change Quotes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

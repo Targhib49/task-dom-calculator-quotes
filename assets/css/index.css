@@ -1,0 +1,11 @@
+.equal {
+    height: 100%;
+}
+
+.result, .quotes-body {
+    height: 100%;
+}
+
+.myButtonFirst:hover, .myButtonSecond:hover, .myButtonOperator:hover {
+    background-color: rgb(179, 194, 170);
+}
