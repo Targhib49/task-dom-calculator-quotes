@@ -28,21 +28,21 @@
                 <div class="card-body">
                     <h6 class="card-title text-center">Basic Calculator</h6>
                     <div class="row py-1">
-                        <input class="form-control" type="text" placeholder="First Operand">
+                        <input id="basic-input-1" class="form-control" type="text" placeholder="First Operand">
                     </div>
-                    <div class="row py-1 justify-content-center">
-                        <div class="btn btn-primary col-2 mx-1">+</div>
-                        <div class="btn btn-primary col-2 mx-1">-</div>
-                        <div class="btn btn-primary col-2 mx-1">X</div>
-                        <div class="btn btn-primary col-2 mx-1">/</div>
+                    <div id="basic-button" class="row py-1 justify-content-center">
+                        <div id="op-+" class="btn btn-primary col-2 mx-1 btn-basic">+</div>
+                        <div id="op--" class="btn btn-primary col-2 mx-1 btn-basic">-</div>
+                        <div id="op-X" class="btn btn-primary col-2 mx-1 btn-basic">X</div>
+                        <div id="op-/" class="btn btn-primary col-2 mx-1 btn-basic">/</div>
                     </div>
                     <div class="row py-1">
-                        <input class="form-control" type="text" placeholder="Second Operand">
+                        <input id="basic-input-2" class="form-control" type="text" placeholder="Second Operand">
                     </div>
-                    <div class="row py-1 justify-content-center">
+                    <div id="basic-equal" class="row py-1 justify-content-center">
                         <div class="btn btn-primary col-2">=</div>
                     </div>
-                    <div class="row pt-4 justify-content-center">
+                    <div id="basic-result" class="row pt-4 justify-content-center">
                         <h5 class="col text-center">0</h5>
                     </div>
                 </div>
@@ -51,20 +51,20 @@
                 <div class="card-body">
                     <h6 class="card-title text-center">Pow, Mod, Int Div Calculator</h6>
                     <div class="row py-1">
-                        <input class="form-control" type="text" placeholder="First Operand">
+                        <input id="pwid-input-1" class="form-control" type="text" placeholder="First Operand">
                     </div>
-                    <div class="row py-1 justify-content-center">
-                        <div class="btn btn-primary col-2 mx-1">^</div>
-                        <div class="btn btn-primary col-2 mx-1">Mod</div>
-                        <div class="btn btn-primary col-2 mx-1">Div</div>
+                    <div id="pwid-button" class="row py-1 justify-content-center">
+                        <div id="op-^" class="btn btn-primary col-2 mx-1 btn-pwid">^</div>
+                        <div id="op-%" class="btn btn-primary col-2 mx-1 btn-pwid">Mod</div>
+                        <div id="op-\" class="btn btn-primary col-2 mx-1 btn-pwid">Div</div>
                     </div>
                     <div class="row py-1">
-                        <input class="form-control" type="text" placeholder="Second Operand">
+                        <input id="pwid-input-2" class="form-control" type="text" placeholder="Second Operand">
                     </div>
-                    <div class="row py-1 justify-content-center">
+                    <div id="pwid-equal" class="row py-1 justify-content-center">
                         <div class="btn btn-primary col-2">=</div>
                     </div>
-                    <div class="row pt-4 justify-content-center">
+                    <div id="pwid-result" class="row pt-4 justify-content-center">
                         <h5 class="col text-center">0</h5>
                     </div>
                 </div>
@@ -73,13 +73,16 @@
                 <div class="card-body">
                     <h6 class="card-title text-center">Factorial and SQRT Calculator</h6>
                     <div class="row py-1">
-                        <input class="form-control" type="text" placeholder="First Operand">
+                        <input id="fs-input" class="form-control" type="text" placeholder="First Operand">
                     </div>
-                    <div class="row py-1 justify-content-center">
-                        <div class="btn btn-primary col-2 mx-1">!</div>
-                        <div class="btn btn-primary col-2 mx-1">&radic;</div>
+                    <div id="fs-button" class="row py-1 justify-content-center">
+                        <div id="op-!" class="btn btn-primary col-2 mx-1 btn-fs">!</div>
+                        <div id="op-sqrt" class="btn btn-primary col-2 mx-1 btn-fs">&radic;</div>
                     </div>
-                    <div class="row pt-4 justify-content-center">
+                    <div id="fs-equal" class="row py-1 justify-content-center">
+                        <div class="btn btn-primary col-2">=</div>
+                    </div>
+                    <div id="fs-result" class="row pt-4 justify-content-center">
                         <h5 class="col text-center">0</h5>
                     </div>
                 </div>
@@ -123,7 +126,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-    <!-- <script src="assets/js/index.js"></script> -->
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
