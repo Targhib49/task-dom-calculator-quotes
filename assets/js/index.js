@@ -1,61 +1,77 @@
-let firstOperandScreen = document.getElementById("operand-1-screen")
-let secondOperandScreen = document.getElementById("operand-2-screen")
-let operatorScreen = document.getElementById("operator-screen")
-let resultScreen = document.getElementById("result-screen")
-let firstOperandButton = document.getElementById("operand-1-button")
-let operatorButton = document.getElementById("operator-button")
-let secondOperandButton = document.getElementById("operand-2-button")
-let quotesGeneratorScreen = document.getElementById("quotes-screen")
-let quotesGeneratorButton = document.getElementById("quotes-button")
+//Elements 
+let calcButton = document.getElementById("calc-button")
+let lowerDisplay = document.getElementById("lower-display")
+lowerDisplay.innerText = "0";
 
-let op1
-let oper
-let op2
-let count = 1
+let count = 0;
 
+// let quotesGeneratorScreen = document.getElementById("quotes-screen")
+// let quotesGeneratorButton = document.getElementById("quotes-button")
+
+/*
 const operation = (op1, oper, op2) => {
-    if (oper == "+") {
-        return op1 + op2
-    } else if (oper == "-") {
-        return op1 - op2
-    } else if (oper == "X") {
-        return op1 * op2
-    } else if (oper == "/") {
-        return op1 / op2
-    } else if (oper == "%") {
-        return op1 % op2
-    } else if (oper == "^") {
-        return op1 ** op2
-    }
-}
+  
+}*/
 
 const display = event => {
-    if (event.target.matches(".myButtonFirst")) {
-        const id = event.target.id.replace("no-", "")
-        firstOperandScreen.innerText = id
-        op1 = Number(id)
-    }
+    if (count < 18) {
+        if (event.target.matches(".numButton")) {
+            let number = event.target.id.replace("no-", "")
+            if (lowerDisplay.innerText == 0) {
+                lowerDisplay.innerText = number
+            } else {
+                lowerDisplay.innerText += number
+            }
+        }
 
-    if (event.target.matches(".myButtonOperator")) {
-        const id = event.target.id.replace("op-", "")
-        operatorScreen.innerText = id
-        oper = id
-    }
+        if (event.target.matches(".opButton")) {
+            let oper = ""
+            let operInd = event.target.id.replace("op-", "")
+            if (operInd == 1) {
+                oper = "+"
+            } else if (operInd == 2) {
+                oper = "-"
+            } else if (operInd == 3) {
+                oper = "x"
+            } else if (operInd == 4) {
+                oper = "/"
+            } else if (operInd == 5) {
+                oper = "^"
+            } else if (operInd == 6) {
+                oper = "%"
+            } else if (operInd == 7) {
+                oper = "\\"
+            } else if (operInd == 8) {
+                oper = "!"
+            }
+            lowerDisplay.innerText += oper
+        }
 
-    if (event.target.matches(".myButtonSecond")) {
-        const id = event.target.id.replace("no-", "")
-        secondOperandScreen.innerText = id
-        op2 = Number(id)
-    }
+        if (event.target.matches(".myButton")) {
+            let button = ""
+            let buttonInd = event.target.id.replace("but-", "")
+            if (buttonInd == 1) {
+                alert("This button is under maintenance")
+            } else if (buttonInd == 2) {
+                button = "."
+            } else if (buttonInd == 3) {
+                alert("in")
+            } else if (buttonInd == 4) {
+                lowerDisplay.innerText = 0
+            } else if (buttonInd == 5) {
+                alert("This button is under maintenance")
+            } else if (buttonInd == 6) {
+                alert("This button is under maintenance")
+            }
+            lowerDisplay.innerText += button
+        }
 
-    if (op1 != null && oper != null && op2 != null) {
-        resultScreen.innerText = 0
-
-        let result = operation(op1, oper, op2)
-        resultScreen.innerText = result
+        count++
+    } else {
+        alert("Max number limit reached")
     }
 }
-
+/*
 const quotesGen = () => {
     let quotes1 = "“Mathematics expresses values that reflect the cosmos, including orderliness, balance, harmony, logic, and abstract beauty.”<br> ― Deepak Chopra "
     let quotes2 = "“The difference between the poet and the mathematician is that the poet tries to get his head into the heavens while the mathematician tries to get the heavens into his head.”<br>― G.K. Chesterton"
@@ -81,10 +97,10 @@ const quotesGen = () => {
         quotesGeneratorScreen.innerHTML = quotes5
     }
 
-}
+}*/
 
 
-firstOperandButton.addEventListener("click", display)
-operatorButton.addEventListener("click", display)
-secondOperandButton.addEventListener("click", display)
-quotesGeneratorButton.addEventListener("click", quotesGen)
+calcButton.addEventListener("click", display)
+// operatorButton.addEventListener("click", display)
+// secondOperandButton.addEventListener("click", display)
+// quotesGeneratorButton.addEventListener("click", quotesGen)
